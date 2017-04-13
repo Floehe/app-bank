@@ -9,7 +9,7 @@ csvImportDynamic <- function(myFile, config) {
                                   check.names  = FALSE,
                                   sep          = config$sep, 
                                   quote        = config$quot, 
-                                  dec          = '.', 
+                                  dec          = config$dec, 
                                   encoding     = config$encoding,
                                   fileEncoding = config$encoding)
                 data$date <- as.Date(as.character(as.POSIXct(as.character(
