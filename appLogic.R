@@ -231,13 +231,13 @@ observeEvent(input$bankInstitute, {
                                           selected = 1)
                         updateTextInput(session,
                                         'bankImportSep',
-                                        value=';')
+                                        value=',')
                         updateTextInput(session,
                                         'bankImportQuote',
                                         value = "\\\"")
                         updateTextInput(session,
                                         'bankImportDec',
-                                        value = '.')
+                                        value = ',')
                         updateTextInput(session,
                                         'bankImportEncoding',
                                         value = 'ISO-8859-1')
